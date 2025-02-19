@@ -2,8 +2,28 @@
 <html>
 <head>
 	<title>Chat App</title>
+
+	<link rel="stylesheet" href="/styles/reset.css">
+	<link rel="stylesheet" href="/styles/root.css">
+
+	<link rel="stylesheet" href="/styles/home.css">
+
 </head>
 
-<body>[
-	<h1>Chat App</h1/body>
-</html> 
+<body>
+	<h1 id="chat-title">Chat App</h1>
+
+	<main>
+		<div id="chat-box">
+
+		</div>
+
+		<div id="box__input-msg">
+			<input type="text" id="input-msg"/>
+			<button id="input-btn">Send</button>
+		</div>
+	
+		<script src="manage-socket.js"></script>
+	</main>
+</body>
+</html>

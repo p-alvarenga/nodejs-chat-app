@@ -1,0 +1,35 @@
+.msg {
+	border: 1px solid transparent;
+
+	color: var(--fnt-color);
+
+	padding: 10px 20px;
+	width: fit-content;
+	max-width: 40%;
+}
+
+.msg.right {
+	border-color: var(--hi-fnt-color);
+
+	align-self: end;
+	border-radius: 4px 20px 4px 4px;
+}
+
+.msg.left {
+	border-color: grey;
+	align-self: start;
+	border-radius: 20px 4px 4px 4px;
+}
+
+
+.msg > h3 { 
+	color: grey;
+	margin: 0 0 2px 0;
+	padding: 4px;
+
+	font-size: .85rem; 
+}
+
+.message > p {
+	padding: 0 0 2px 4px;
+}

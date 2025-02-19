@@ -1,0 +1,74 @@
+@import url("/styles/msg-style.css");
+
+body {
+	display:flex;
+	flex-direction: column;
+
+	background-color: var(--bkg-color);
+	font-family: 'monospace';
+}
+
+main {
+	margin: auto;
+	width: 50vw;
+}
+
+#chat-title {
+	font-size: 3rem;
+	font-weight: 800;
+	color: var(--hi-fnt-color);
+
+	margin: 1rem auto 4rem auto;
+}
+
+#chat-box {
+	display:flex;
+	flex-direction: column;
+
+	height: 45vh;
+	padding: 30px;
+
+	border: 2px solid rgba(222,255,255,.1);
+	border-radius: 8px 8px 4px 4px;
+}
+
+#box__input-msg {
+	display:flex;
+	gap: 16px;
+	
+	margin-top: 1rem;
+	padding: 16px;
+
+	border: 2px solid rgba(222, 255, 255, .1);
+	border-radius: 4px 4px 8px 8px;
+} 
+
+#input-msg { 
+	width: 100%; 
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid var(--hi-fnt-color);
+	user-select: none !important;
+
+	color: white;
+	font-size: 1rem;
+	font-family: 'monospace';
+}
+
+#input-btn {
+	border: 1px solid var(--hi-fnt-color);
+	border-radius: 8px;
+	padding: 16px 28px;
+	font-size: 1rem;
+	color: var(--hi-fnt-color);
+
+	background-color: transparent;
+	transition: .3s;
+}
+
+#input-btn:hover {
+	cursor: pointer;
+	color: var(--bkg-color);
+	background-color: var(--hi-fnt-color);
+	border-radius: 16px;
+}
