@@ -9,8 +9,6 @@
 	<link rel="stylesheet" href="/styles/home.css">
 
 </head>
-
-<body>
 	<h1 id="chat-title">Chat App</h1>
 
 	<main>
@@ -19,11 +17,13 @@
 		</div>
 
 		<div id="box__input-msg">
-			<input type="text" id="input-msg"/>
+			<input id="input-msg" onkeydown="handleInputKey(this)" type="text"/>
 			<button id="input-btn">Send</button>
 		</div>
-	
-		<script src="manage-socket.js"></script>
+
+		<script src="https://cdn.socket.io/4.8.1/socket.io.min.js"></script>
+		<script src="/scripts/send-msg.js"></script>
+		<script src="/scripts/receive-msg.js"></script>
 	</main>
 </body>
 </html>
