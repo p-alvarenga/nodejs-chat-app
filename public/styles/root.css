@@ -3,3 +3,5 @@
 	--fnt-color: white;
 	--hi-fnt-color: #2ca;
 }
+body { background-color: var(--bkg-color); }
+* { font-family: 'monospace' !important; }

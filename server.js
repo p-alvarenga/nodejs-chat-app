@@ -23,7 +23,9 @@ io.on("connection", (socket) => {
 	console.log(`> ${socket.id} connected`);
 
 	socket.on("chat-msg", (msg) => {
-		console.log(`${socket.id} sent ${msg}`);	
+		console.log(`${socket.id}:  "${msg}"`);	
+		io.emit("chat-msg", msg);
+		//socket.broadcast.emit("chat-msg", msg);
 	});
 
 	socket.on("disconnect", () => {

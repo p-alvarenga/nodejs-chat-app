@@ -26,10 +26,7 @@
 	color: grey;
 	margin: 0 0 2px 0;
 	padding: 4px;
-
 	font-size: .85rem; 
 }
 
-.message > p {
-	padding: 0 0 2px 4px;
-}
+.msg > p { padding: 0 0 2px 4px; }
