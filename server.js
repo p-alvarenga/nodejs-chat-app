@@ -33,6 +33,6 @@ io.on("connection", (socket) => {
 	})
 });
 
-httpServer.listen(port, () => {
+httpServer.listen(port, "0.0.0.0", () => {
 	console.log(`Server running on *:${port}`);
 });
