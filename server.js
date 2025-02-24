@@ -22,9 +22,9 @@ app.get('/', (req, res) => {
 io.on("connection", (socket) => {
 	console.log(`> ${socket.id} connected`);
 
-	socket.on("chat-msg", (msg) => {
-		console.log(`${socket.id}:  "${msg}"`);	
-		io.emit("chat-msg", msg);
+	socket.on("chat-msg", (data) => {
+		console.log(`${socket.id}: "${data.msg}" (${data.author})`);	
+		io.emit("chat-msg", data);
 		//socket.broadcast.emit("chat-msg", msg);
 	});
 

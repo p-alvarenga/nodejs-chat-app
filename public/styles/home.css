@@ -14,11 +14,14 @@ main { margin: auto; width: 50vw; }
 	display:flex;
 	flex-direction: column;
 
+	gap: 30px;
 	height: 45vh;
 	padding: 30px;
 
 	border: 2px solid rgba(222,255,255,.1);
 	border-radius: 8px 8px 4px 4px;
+
+	overflow-y: auto;
 }
 
 #msg-form {
@@ -32,17 +35,6 @@ main { margin: auto; width: 50vw; }
 	border-radius: 4px 4px 8px 8px;
 } 
 
-#input-msg { 
-	width: 100%; 
-	background-color: transparent;
-	border: none;
-	border-bottom: 1px solid var(--hi-fnt-color);
-	user-select: none !important;
-
-	color: white;
-	font-size: 1rem;
-}
-
 #input-btn {
 	border: 1px solid var(--hi-fnt-color);
 	border-radius: 8px;
@@ -55,8 +47,29 @@ main { margin: auto; width: 50vw; }
 }
 
 #input-btn:hover {
-	cursor: pointer;
+		cursor: pointer;
 	color: var(--bkg-color);
 	background-color: var(--hi-fnt-color);
 	border-radius: 16px;
+}
+
+#username-form {
+	width: max-content;
+	padding: 6px;
+	margin-bottom: 1rem;
+}
+
+#username-form > label {
+	color: grey;
+	font-size: .8rem;
+}
+
+#username-form > input,#input-msg {
+	background-color: transparent;
+	color: white;
+	font-size: 1rem;
+	width: 100%;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid var(--hi-fnt-color);
 }

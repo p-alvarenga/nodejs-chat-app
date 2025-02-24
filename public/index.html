@@ -13,13 +13,16 @@
 	<h1 id="chat-title">Chat App</h1>
 
 	<main>
-		<form></form>
+		<div id="username-form"> 
+			<label for="input-username" >Username</label>
+			<input id="input-username" maxlength="8" size="4" type="text" name="input-username"/>
+		</div>
 	
 		<div id="chat-box">
 		</div>
 
 		<form id="msg-form">
-		<input id="input-msg" type="text"/>
+		<input id="input-msg" type="text" required/>
 			<button id="input-btn">Send</button>
 		</form>
 
