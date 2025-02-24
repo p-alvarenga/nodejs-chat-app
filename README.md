@@ -11,7 +11,20 @@
 > [!TIP]
 > You can use a machine to run the system in a private network (I've used a raspberry pi, so I can test it inside my intranet)
 
-1. clone it: `git clone https://github.com/p-alvarenga/nodejs-chat-app`
-2. enter into project directory: `cd nodejs-chat-app`
-3. install dependencies: `npm install`
-4. run the server: `node server.js`
+1. **clone repo**
+   ```sh
+   git clone https://github.com/p-alvarenga/nodejs-chat-app
+   ```
+3. **Access the project directory**
+   ```sh
+   cd nodejs-chat-app
+   ```
+5. **install dependencies:**
+    ```sh
+    npm install
+   ```
+8. **run the application**
+   ```
+   node server.js
+   ```
+
