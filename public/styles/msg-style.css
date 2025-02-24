@@ -3,7 +3,7 @@
 
 	color: var(--fnt-color);
 
-	padding: 10px 20px;
+	padding: 8px 12px 10px 8px;
 	width: fit-content;
 	max-width: 70%;
 }
@@ -12,15 +12,14 @@
 	border-color: var(--hi-fnt-color);
 
 	align-self: end;
-	border-radius: 4px 20px 4px 4px;
+	border-radius: 3px 12px 3px 3px;
 }
 
 .msg.left {
 	border-color: grey;
 	align-self: start;
-	border-radius: 20px 4px 4px 4px;
+	border-radius: 12px 3px 3px 3px;
 }
-
 
 .msg > h3 { 
 	color: grey;
